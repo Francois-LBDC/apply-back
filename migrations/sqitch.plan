@@ -1,0 +1,8 @@
+%syntax-version=1.0.0
+%project=apotheose
+
+user-init 2021-03-02T11:15:18Z François le Blanc de Cernex <francois.leblancdecernex@kedgebs.com> # creation of the user table
+tables 2021-03-03T12:42:26Z François le Blanc de Cernex <francois.leblancdecernex@kedgebs.com> # add the remaining tables (all but user table)
+seed_fixed_tables 2021-03-05T14:48:55Z François le Blanc de Cernex <francois.leblancdecernex@kedgebs.com> # seeding of action_type, contract, type
+seeding_for_tests 2021-03-05T17:32:41Z François le Blanc de Cernex <francois.leblancdecernex@kedgebs.com> # seeding application, action, company, cover_letter
+cover_letter_id_set_null_on_delete 2021-03-15T08:43:23Z François le Blanc de Cernex <francois.leblancdecernex@kedgebs.com> # If i remove a line in cover letter table, it sets the value to null if the id was in an application
